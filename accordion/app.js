@@ -54,11 +54,19 @@ const app = new Vue({
     el: '#media-list',
     data: {
       title: 'The Library',
-      mediaList: media
+      mediaList: media,
+      options: media.map((media) => media.type),
+      type: 'Select a type of media...',
     },
     methods: {
       toggleDetails: function(index) {
         this.mediaList[index].showDetail = !this.mediaList[index].showDetail;
+      },
+      filterList: function(e) {
+        console.log(e.target.value);
+        this.type = e.target.value;
       }
     }
   });
+
+  
