@@ -56,7 +56,7 @@ const app = new Vue({
       title: 'The Library',
       mediaList: media,
       options: media.map((media) => media.type),
-      type: 'Select a type of media...',
+      type: '',
     },
     methods: {
       toggleDetails: function(index) {
@@ -65,6 +65,17 @@ const app = new Vue({
       filterList: function(e) {
         console.log(e.target.value);
         this.type = e.target.value;
+      }
+    },
+    computed: {
+      uniqueItemsList: function() {
+        const types = [];
+        this.mediaList.forEach((item) => {
+          if(!types.includes(item.type)) {
+            types.push(item.type);
+          }
+        });
+        return types;
       }
     }
   });
