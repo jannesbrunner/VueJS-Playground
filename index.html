@@ -33,6 +33,12 @@
         </div>
     </div>
     <hr />
+    <h1>List rendering (v-for)</h1>
+    <div id="colors">
+        <ul>
+            <li v-bind:style="{color: color}" v-for="(color, index) in rainbow">{{ index + ": " + color }}</li>
+        </ul>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="app.js"></script>
 </body>

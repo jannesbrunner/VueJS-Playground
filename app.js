@@ -36,3 +36,14 @@ const Book = new Vue({
         }
     }
 });
+
+const colorsOfTheRainbow = [
+    "red", "orange", "green", "blue", "indigo", "violet"
+];
+
+new Vue({
+    el: "#colors",
+    data: {
+        rainbow: colorsOfTheRainbow
+    }
+})
