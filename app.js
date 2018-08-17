@@ -24,11 +24,15 @@ const Book = new Vue({
     data: {
         title: 'The Sirens of Titan',
         author: 'Kurt Vonnegut',
-        summary: 'This is a summary of the Book'
+        summary: 'This is a summary of the Book',
+        showDetail: false,
     },
     methods: {
         sayHello: function() {
             alert(`Hello ${this.title}`);
+        },
+        toggleDetails: function() {
+            this.showDetail = !this.showDetail;
         }
     }
 });

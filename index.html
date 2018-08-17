@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Hello Vue!</title>
 </head>
+
 <body>
     <h1>Start</h1>
     <div id="helloVue">
@@ -23,12 +25,16 @@
     <hr />
     <h1>Basic Event Handling</h1>
     <div id="book">
-        <h2 v-on:click="sayHello">{{ title }}</h2>
-        <p>{{ author }}</p>
-        <p>{{ summary }}</p>
+        <h2 v-on:click="toggleDetails">{{ title }}</h2>
+        <p>Click on the Title</p>
+        <div v-show="showDetail">
+            <p>{{ author }}</p>
+            <p>{{ summary }}</p>
+        </div>
     </div>
     <hr />
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
