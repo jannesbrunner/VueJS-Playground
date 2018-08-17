@@ -62,8 +62,7 @@ const app = new Vue({
       toggleDetails: function(index) {
         this.mediaList[index].showDetail = !this.mediaList[index].showDetail;
       },
-      filterList: function(e) {
-        console.log(e.target.value);
+      filterList: function(e) {x
         this.type = e.target.value;
       }
     },
