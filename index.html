@@ -8,15 +8,26 @@
     <title>Hello Vue!</title>
 </head>
 <body>
+    <h1>Start</h1>
     <div id="helloVue">
-        <h1>{{ title }}</h1>
+        <h2>{{ title }}</h2>
         <p class="message">{{ message }}</p>
     </div>
+    <hr />
+    <h1>Data binding</h1>
     <div id="example">
-        <h1 v-text="title"></h1>
+        <h2 v-text="title"></h2>
         <img v-bind:src="img.src" v-bind:alt="img.alt">
         <p class="message">{{ message }}</p>
     </div>
+    <hr />
+    <h1>Basic Event Handling</h1>
+    <div id="book">
+        <h2 v-on:click="sayHello">{{ title }}</h2>
+        <p>{{ author }}</p>
+        <p>{{ summary }}</p>
+    </div>
+    <hr />
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="app.js"></script>
 </body>
