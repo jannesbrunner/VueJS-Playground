@@ -2,7 +2,7 @@
 <img src="logo.png" width="100" height="100" float="left"/>
 <h1 float="right">VueJS Playground</h1>
 
-This is me exploring, playing and messing around with the beautiful super-scalable front-end JavaScript Framework [VueJS](https://vuejs.org/).
+This is me exploring, playing and messing around with the beautiful super-scalable front-end JavaScript Library [VueJS](https://vuejs.org/).
 
 ## Ingredients
 
