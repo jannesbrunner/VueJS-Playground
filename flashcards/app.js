@@ -22,9 +22,6 @@ const cards = [
     },
   ]; 
 
-  // Animate card flip
-  // Display Error msg if fields are blank
-
   new Vue({
     el: '#flashcard-app',
     data: {
@@ -39,7 +36,6 @@ const cards = [
       },
       addNewCard: function() {
         if (this.newFront && this.newBack) {
-        // cards.push({front: this.newFront, back: this.newBack, flipped: false});
         this.cards = [
           ...cards,
           {
