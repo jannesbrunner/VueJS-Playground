@@ -43,15 +43,22 @@ const cards = [
       },
       addNewCard: function() {
         if (this.newFront && this.newBack) {
-        cards.push({front: this.newFront, back: this.newBack, flipped: false});
+        // cards.push({front: this.newFront, back: this.newBack, flipped: false});
+        this.cards = [
+          ...cards,
+          {
+            front: this.newFront,
+            back: this.newBack,
+            flipped: false
+          }
+        ]
         this.newFront = "";
         this.newBack = "";
         this.error = false;
         }
         else {
           this.error = true;
-        }
-          
+        } 
       }
     }
 
