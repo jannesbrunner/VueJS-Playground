@@ -18,7 +18,7 @@
         <input v-model="newFront" type="text" id="front">
       </label>
       <label for="back">Back
-        <input v-model="newBack" type="text" id="back">
+        <input v-on:keypress.enter="addNewCard()" v-model="newBack" type="text" id="back">
       </label>
       <button v-on:click="addNewCard()">Add a New Card</button>
       <span v-show="error" class="error">Oops! Flashcards need a front and a back.</span>
