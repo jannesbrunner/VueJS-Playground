@@ -22,12 +22,21 @@ const cards = [
     },
   ]; 
 
+  // Display our data
+  // On click: Flip cards
+  // Add new when user hits enter or clicks button
+  // Delete cards
+  // Animate card flip
+  // Display Error msg if fields are blank
+
   new Vue({
     el: '#flashcard-app',
     data: {
       cards: cards,
     },
     methods: {
-
+      toggleCard: function(card) {
+        card.flipped = !card.flipped;
+      }
     }
   });
